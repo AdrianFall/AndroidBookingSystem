@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <Button
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="5dp"
+        android:background="@drawable/calendar_top_date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" >
+    </Button>
+
+    <ImageView
+        android:id="@+id/prevMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/selectedDate"
+        android:layout_below="@+id/selectedDate"
+        android:clickable="true"
+        android:contentDescription="@string/left_button_desc"
+        android:src="@drawable/calendar_left_button_selector" />
+
+    <ImageView
+        android:id="@+id/nextMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/selectedDate"
+        android:layout_alignTop="@+id/prevMonth"
+        android:clickable="true"
+        android:contentDescription="@string/left_button_desc"
+        android:src="@drawable/calendar_right_button_selector" />
+
+    <Button
+        android:id="@+id/currentMonthDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prevMonth"
+        android:layout_toLeftOf="@+id/nextMonth"
+        android:layout_toRightOf="@+id/prevMonth"
+        android:background="@drawable/calendar_bar"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <GridView
+        android:id="@+id/calendarDaysTitles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prevMonth"
+        android:layout_below="@+id/prevMonth"
+        android:numColumns="7" >
+    </GridView>
+
+    <GridView
+        android:id="@+id/calendaryDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarDaysTitles"
+        android:layout_centerHorizontal="true"
+        android:numColumns="7" >
+    </GridView>
+
+    <Button
+        android:id="@+id/booking_day_slots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendaryDays"
+        android:layout_centerHorizontal="true"
+        android:onClick="bookDay"
+        android:text="@string/booking_day_slots_button" />
+    <Button
+        android:id="@+id/cancel_day_slot"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/booking_day_slots"
+        android:layout_below="@+id/calendaryDays"
+        android:layout_centerHorizontal="true"
+        android:onClick="cancelDay"
+        android:text="@string/cancel_day_slot_button" />
+
+</RelativeLayout>

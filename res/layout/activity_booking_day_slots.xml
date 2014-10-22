@@ -1,0 +1,63 @@
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:screenOrientation="portrait">
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp" android:id="@+id/scrollView1">
+
+            <TextView
+                android:id="@+id/date_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    	</ScrollView>
+
+         <Button
+             android:id="@+id/book_day_time_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="30dp"
+             android:onClick="checkAppointment"
+             android:text="@string/book_appointment" />
+         
+         <Button
+             android:id="@+id/cancel_day_time_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="30dp"
+             android:onClick="cancelAppointment"
+             android:text="@string/appointments_cancel" />
+
+         <TextView
+             android:id="@+id/booking_day_selected_time"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/book_day_time_button"
+             android:layout_alignParentRight="true"
+             android:layout_marginBottom="20dp"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <TableLayout
+             android:id="@+id/timeslots_table_layout"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="38dp"
+             android:stretchColumns="0,1" >
+         </TableLayout>
+
+    </RelativeLayout>
+

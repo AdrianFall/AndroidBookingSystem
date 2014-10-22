@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PAA Booking</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_section">Login</string>
+    <string name="register_section">Register</string>
+    <string name="test_label">Login</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="email">Email</string>
+    <string name="login_button">Login</string>
+    <string name="error"></string>
+    <string name="first_name">Full name</string>
+    <string name="second_name">Second name</string>
+    <string name="id_number">ID number</string>
+    <string name="register_button">Register</string>
+    <string name="course">Course</string>
+
+    <string-array name="course_list">
+        <item>Computer Science</item>
+        <item>Computing</item>
+        <item>Software Engineering</item>
+    </string-array>
+
+    <string name="title_activity_booking">BookingActivity</string>
+    <string name="booking_section">Booking</string>
+    <string name="apoointments_section">Appointments</string>
+    <string name="my_info_section">My Info</string>
+    <string name="left_button_desc">Previous Month</string>
+    <string name="right_button_desc">Next Month</string>
+    <string name="my_info_title">Your Details</string>
+    <string name="my_info_fullname_hint">Fullname:</string>
+    <string name="my_info_idnumber_hint">ID Number:</string>
+    <string name="my_info_course_hint">Course:</string>
+    <string name="my_info_paa_hint">PAA:</string>
+    <string name="booking_day_slots_button">Day Slots</string>
+    <string name="title_activity_booking_day_slots">BookingDaySlotsActivity</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="paa_availability_times">PAA times:</string>
+    <string name="appointment_id">Appointment ID:</string>
+    <string name="appointment_date">Date:</string>
+    <string name="appointment_time">Time:</string>
+    <string name="appointment_paa_name">PAA name:</string>
+    <string name="appointments_cancel">Cancel Appointment</string>
+    <string name="cancel_day_slot_button">Cancel Day</string>
+
+</resources>
